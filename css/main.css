@@ -140,15 +140,12 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 0px;
-}
-
 .section-two {
 	/*border-left: 1px solid #eee;
 	border-right: 1px solid #eee;*/
 }
 
+.section-one h4,
 .section-two h4,
 .section-three h4 {
 	padding: 10px 0px;
@@ -191,4 +188,32 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ .bottom-section{
+		display: flex;
+ 		justify-content: space-between;
+ 		align-items: flex-start;
+ }
+ .section-one, .section-two,.section-three {
+	 	width: 33%;
+ }
+}
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+	header{
+		flex-wrap: nowrap;
+	}
+	header h1{
+		text-align: left;
+		border: none;
+		padding: 1em 0em
+	}
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
 }
